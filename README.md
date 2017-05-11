@@ -1,4 +1,4 @@
-# gradle-module-dependency
+# Android Studio module-to-module dependencies
 
 This repo showcases how one can include a "raw" Android project as an additional encapsulated Gradle module. 
 
