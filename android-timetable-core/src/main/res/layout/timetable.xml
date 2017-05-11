@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+    <!--<RelativeLayout android:id="@+id/group1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/title"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:text="Week 26, May 2016"
+                  android:textAllCaps="true"/>
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:layout_width="match_parent"
+                      android:id="@+id/group2"
+                      android:layout_below="@+id/title"
+                      android:layout_marginLeft="96dp"
+                      android:layout_marginStart="96dp"
+                      android:orientation="horizontal"
+                      android:weightSum="7">
+
+            <TextView android:text="31"
+                      android:id="@+id/text1"
+                      style="@style/TextAppearance.AppCompat.Title"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"/>
+            <TextView android:text="32"
+                      android:id="@+id/text2"
+                      style="@style/TextAppearance.AppCompat.Title"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"/>
+            <TextView android:text="33"
+                      android:id="@+id/text3"
+                      style="@style/TextAppearance.AppCompat.Title"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"/>
+            <TextView android:text="34"
+                      android:id="@+id/text4"
+                      style="@style/TextAppearance.AppCompat.Title"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"/>
+            <TextView android:text="35"
+                      android:id="@+id/text5"
+                      style="@style/TextAppearance.AppCompat.Title"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"/>
+            <TextView android:text="36"
+                      android:id="@+id/text6"
+                      style="@style/TextAppearance.AppCompat.Title"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"/>
+            <TextView android:text="37"
+                      android:id="@+id/text7"
+                      style="@style/TextAppearance.AppCompat.Title"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:layout_width="match_parent"
+                      android:layout_below="@+id/group2"
+                      android:layout_marginLeft="96dp"
+                      android:layout_marginStart="96dp"
+                      android:orientation="horizontal"
+                      android:weightSum="7">
+
+            <TextView android:text="Mon"
+                      android:id="@+id/text8"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"/>
+            <TextView android:text="Tue"
+                      android:id="@+id/text9"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"/>
+            <TextView android:text="Wed"
+                      android:id="@+id/text10"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"/>
+            <TextView android:text="Thu"
+                      android:id="@+id/text11"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"/>
+            <TextView android:text="Fri"
+                      android:id="@+id/text12"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"/>
+            <TextView android:text="Sat"
+                      android:id="@+id/text13"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"/>
+            <TextView android:text="Sun"
+                      android:id="@+id/text14"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <View style="@style/divider" android:layout_below="@id/group1"/>-->
+
+    <android.support.v7.widget.RecyclerView android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:minHeight="48dp"
+                                            android:id="@+id/guideX"
+                                            android:layout_marginLeft="48dp"
+                                            android:layout_marginStart="48dp"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_alignParentRight="true"/>
+    <android.support.v7.widget.RecyclerView android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_below="@id/guideX"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentBottom="true"
+                                            android:minWidth="48dp"
+                                            android:id="@+id/guideY"/>
+
+    <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_below="@id/guideX"
+                                            android:layout_toRightOf="@+id/guideY"
+                                            android:layout_toEndOf="@+id/guideY"/>
+
+
+    <!--<ProgressBar android:id="@+id/progress_bar"
+                 android:indeterminate="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 style="?android:attr/progressBarStyle"
+                 android:layout_centerInParent="true"/>-->
+    <!--<ScrollView android:id="@+id/scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/group1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+        
+        
+    </ScrollView>-->
+
+
+</RelativeLayout>
